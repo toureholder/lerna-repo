@@ -1,0 +1,21 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "storybook": "npm run storybook:prepare && start-storybook -s .storybook/static -p 6006",
+    "storybook:build": "npm run storybook:prepare && build-storybook -s .storybook/static",
+    "storybook:prepare": "copyfiles -u 1 \"packages/**(!node_modules)/dist/**\" \".storybook/static\""
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@storybook/addon-docs": "^5.3.19",
+    "@storybook/addon-notes": "^5.3.19",
+    "@storybook/html": "^5.3.19",
+    "babel-loader": "^8.1.0",
+    "copyfiles": "^2.3.0",
+    "lerna": "^3.22.1"
+  },
+  "dependencies": {}
+}
