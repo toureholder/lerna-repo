@@ -1,0 +1,45 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+
+<Meta title="MDX/Alert" />
+
+# Alert
+
+With `MDX` we can define a story for `wiz-alert` right in the middle of our
+markdown documentation.
+ 
+<Preview>
+  <Story name="success" height="100px">
+    {'<wiz-alert type="success">Este é um alerta de sucesso - confira!</wiz-alert>'}
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="error" height="100px">
+    {'<wiz-alert type="error">Este é um alerta de erro - confira!</wiz-alert>'}
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="warning" height="100px">
+    {'<wiz-alert type="warning">Este é um alerta de warning - confira!</wiz-alert>'}
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="information" height="100px">
+    {'<wiz-alert type="information">Este é um alerta de warning - confira!</wiz-alert>'}
+  </Story>
+</Preview>
+
+## Properties
+
+| Property   | Attribute  | Description | Type     | Default     |
+| ---------- | ---------- | ----------- | -------- | ----------- |
+| `btnclose` | `btnclose` |             | `string` | `undefined` |
+| `time`     | `time`     |             | `number` | `undefined` |
+| `type`     | `type`     |             | `string` | `undefined` |
+
+
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*
